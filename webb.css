@@ -11,7 +11,7 @@ nav {
 }
 /*Att när pekaren är över en sida man kan gå till blir texten vit*/
 nav a:hover{
-	color:white;
+	color:pink;
 }
 
 ul {
@@ -60,9 +60,9 @@ main {
 /*Hur hudud kontentet ska vara utplacerat*/
 .grid-container-main {
   display: grid;
-  grid-template-columns: 14% auto auto auto 14%;
+  grid-template-columns: 14% auto auto auto auto 14%;
   grid-template-rows: 100px 70px 90px auto 100px;
-  background: grey;
+  background: #fff;
 }
 
 .item1 {
@@ -91,13 +91,30 @@ main {
   grid-row: 4;
 }
 .item6 {
+  grid-column: 2/ span 1;
+  grid-row: 4;
+}
+.item8 {
   grid-column: 3;
   grid-row: 4;
 }
-.item7 {
-  grid-column: 5;
+.item9 {
+  grid-column: 4 / span 2;
   grid-row: 4;
 }
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  grid-column: 2;
+}
+
+td, th {
+  border: 6px solid #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+
 
 .grid-container-quiz {
   display: grid;
